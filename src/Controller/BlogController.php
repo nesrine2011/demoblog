@@ -57,9 +57,6 @@ class BlogController extends AbstractController
         $form->handleRequest($globals);
 
 
-
-        dump($article);
-
         if($form->isSubmitted() && $form->isValid())
         {
             $article->setCreatedAt(new \DateTime);
